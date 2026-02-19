@@ -1,0 +1,12 @@
+valor_da_hora=int(input("coloque o valor das horas aqui"))
+horas_trabalhadas=int(input("quantas horas você trabalhou?"))
+salario_bruto=(valor_da_hora*horas_trabalhadas)
+IR=(salario_bruto* 0.11)
+INSS=(salario_bruto*0.08)
+SINDICATO=(salario_bruto*0.05)
+salario_liquido = salario_bruto - IR - INSS - SINDICATO
+print("salario bruto de R$", salario_bruto)
+print("-ir (11%) de R$",IR)
+print("-inss (8%) de R$",INSS)
+print("-sindicato(5%) de R$",SINDICATO)
+print("+salario liquido de R$",salario_liquido)
